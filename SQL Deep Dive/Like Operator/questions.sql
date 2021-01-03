@@ -5,7 +5,8 @@
 * Sample output: https://imgur.com/vXs4093
 * Use EXTRACT (YEAR FROM AGE(birth_date)) we will learn about this in later parts of the course
 */
-SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
+SELECT age FROM Employees
+where name like %M;
 
 
 /*
@@ -14,7 +15,8 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Question: How many people's name start with A and end with R?
 * Expected output: 1846
 */
-
+select * from Employees
+where name like A%R;
                                                   
 /*
 * DB: Store
@@ -40,4 +42,4 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Replace null values with "No State"                                                  
 * Expected output: https://imgur.com/AVe6G4c
 */
-
+select  from 
