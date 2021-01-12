@@ -4,8 +4,9 @@
 *  Table: Employees
 */
 
-SELECT e.emp_no
+SELECT count(e.emp_no),hire_date
 FROM employees as e
+GROUP BY hire_date;
 
 /*
 *   Show me all the employees, hired after 1991 and count the amount of positions they've had
